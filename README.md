@@ -4,21 +4,21 @@
 
 Implementação do modelo Linda (Tuple Space) em:
 
-🔹 C++ (Windows + Winsock)
+🔹 C++ 
 
-🔹 Go (Golang nativo)
+🔹 Go
 
 O servidor permite operações clássicas do modelo Linda:
 
-WR – Write (escrita)
+WR – Write (insere tupla)
 
-RD – Read (leitura não destrutiva)
+RD – Read (le e não remove tupla)
 
-IN – Take (leitura destrutiva)
+IN – Take (le e remove tupla)
 
-EX – Execute (consome, processa e gera nova tupla)
+EX – Execute a service(executa um servico)
 
-LIST – Listagem interna
+LIST – Lista tuplas (no servidor)
 
 EXIT – Encerrar conexão
 
@@ -67,17 +67,17 @@ Go instalado (1.18+)
 go run main.go
 
 🧱 Gerar executável
-go build -o servidor
+go build -o servidor_go
 
 
 Executar:
 
-./servidor
+./servidor_go
 
 
 ou com porta:
 
-./servidor 54321
+./servidor_go 54321
 
 🧠 Operações do Modelo Linda
 Comando	Descrição
